@@ -8,25 +8,27 @@ def url_markup(videoid, duration, user_id, query, query_type):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❮",
+                text="Pevious",
                 callback_data=f"slider B|{query_type}|{query}|{user_id}",
+            InlineKeyboardButton("🔔 Support", url=f"https://t.me/Vexana_Support"),
             ),
             InlineKeyboardButton(
                 text="Play Now",
                 callback_data=f"Yukki {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="❯",
+                text="Next",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}",
+            InlineKeyboardButton("🔔 Updates", url=f"https://t.me/Vexana_Updates"),
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🔎 More Results",
+                text="🔎 More Option",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 Close Search",
+                text="🗑 Close ",
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
@@ -38,7 +40,7 @@ def url_markup2(videoid, duration, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="▶️ Play Now",
+                text="Tap Here TO Play Now",
                 callback_data=f"Yukki {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
@@ -86,13 +88,13 @@ def search_markup(
         ],
         [
             InlineKeyboardButton(
-                text="<", callback_data=f"popat 1|{query}|{user_id}"
+                text="Pevious", callback_data=f"popat 1|{query}|{user_id}"
             ),
             InlineKeyboardButton(
                 text="🗑 Close", callback_data=f"forceclose {query}|{user_id}"
             ),
             InlineKeyboardButton(
-                text=">", callback_data=f"popat 1|{query}|{user_id}"
+                text="Next", callback_data=f"popat 1|{query}|{user_id}"
             ),
         ],
     ]
@@ -140,13 +142,13 @@ def search_markup2(
         ],
         [
             InlineKeyboardButton(
-                text="<", callback_data=f"popat 2|{query}|{user_id}"
+                text="Pevious", callback_data=f"popat 2|{query}|{user_id}"
             ),
             InlineKeyboardButton(
                 text="🗑 Close", callback_data=f"forceclose {query}|{user_id}"
             ),
             InlineKeyboardButton(
-                text=">", callback_data=f"popat 2|{query}|{user_id}"
+                text="Next", callback_data=f"popat 2|{query}|{user_id}"
             ),
         ],
     ]
