@@ -9,18 +9,18 @@ def url_markup(videoid, duration, user_id, query, query_type):
         [
             InlineKeyboardButton(
                 text="Pevious",
-                callback_data=f"slider B|{query_type}|{query}|{user_id}",
+                callback_data=f"slider B|{query_type}|{query}|{user_id}"),
             InlineKeyboardButton("🔔 Support", url=f"https://t.me/Vexana_Support"),
-            ),
+            
             InlineKeyboardButton(
                 text="Play Now",
                 callback_data=f"Yukki {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
                 text="Next",
-                callback_data=f"slider F|{query_type}|{query}|{user_id}",
+                callback_data=f"slider F|{query_type}|{query}|{user_id}"),
             InlineKeyboardButton("🔔 Updates", url=f"https://t.me/Vexana_Updates"),
-            ),
+           
         ],
         [
             InlineKeyboardButton(
