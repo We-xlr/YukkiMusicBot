@@ -34,7 +34,7 @@ __HELP__ = """
 """
 
 
-async def bot_sys_stats():
+async def bot_sys_statss():
     bot_uptime = int(time.time() - boottime)
     cpu = psutil.cpu_percent(interval=0.5)
     mem = psutil.virtual_memory().percent
