@@ -159,9 +159,9 @@ async def startyuplay(_, CallbackQuery):
         return await CallbackQuery.message.reply_text(
             f"**Duration Limit Exceeded**\n\n**Allowed Duration: **{DURATION_LIMIT_MIN} minute(s)\n**Received Duration:** {duration_min} minute(s)"
         )
-    await CallbackQuery.answer(f"Processing:- {title[:20]}", show_alert=True)
+    await CallbackQuery.answer(f"Feathching Detail:- {title[:20]}", show_alert=True)
     mystic = await CallbackQuery.message.reply_text(
-        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n Taking A look On server"
     )
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
