@@ -19,23 +19,8 @@ def url_markup(videoid, duration, user_id, query, query_type):
             InlineKeyboardButton(
                 text="Next",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}"),
-            
-           
-        ],
-        [
-            InlineKeyboardButton("🔔 Support", url=f"https://t.me/Vexana_Support"),
-            InlineKeyboardButton("🔔 Updates", url=f"https://t.me/Vexana_Updates"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🔎 More Option",
-                callback_data=f"Search {query}|{user_id}",
-            ),
-            InlineKeyboardButton(
-                text="🗑 Close ",
-                callback_data=f"forceclose {query}|{user_id}",
-            ),
-        ],
+            ],
+
     ]
     return buttons
 
