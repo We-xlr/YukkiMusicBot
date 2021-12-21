@@ -156,7 +156,7 @@ def secondary_markup(videoid, user_id):
             InlineKeyboardButton(
                 text="Updates", url=f"https://t.me/Vexana_Updates"
             ),
-            InlineKeyboardButton(text="Support", url=f"https://t.me/Vexana_Support),
+            InlineKeyboardButton(text="Support", url=f"https://t.me/Vexana_Support"),
         ],
     ]
     return buttons
