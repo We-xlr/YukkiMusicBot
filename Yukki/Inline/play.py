@@ -154,9 +154,9 @@ def secondary_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+                text="Updates", url=f"https://t.me/Vexana_Updates"
             ),
-            InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+            InlineKeyboardButton(text="Support", url=f"https://t.me/Vexana_Support),
         ],
     ]
     return buttons
@@ -181,9 +181,9 @@ def primary_markup(videoid, user_id, current_time, total_time):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+                text="Support", url=f"https://t.me/Vexana_Support"
             ),
-            InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+            InlineKeyboardButton(text="Updates", url=f"https://t.me/Vexana_Updates"),
         ],
     ]
     return buttons
@@ -198,16 +198,16 @@ def timer_markup(videoid, user_id, current_time, total_time):
             )
         ],
         [
-            InlineKeyboardButton(text="▶️", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="⏸️", callback_data=f"pausecb"),
-            InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
+            InlineKeyboardButton(text="Resume", callback_data=f"resumecb"),
+            InlineKeyboardButton(text="Pause", callback_data=f"pausecb"),
+            InlineKeyboardButton(text="Skip", callback_data=f"skipcb"),
+            InlineKeyboardButton(text="Stop", callback_data=f"stopcb"),
         ],
         [
             InlineKeyboardButton(
-                text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+                text="Support", url=f"https://t.me/Vexana_Support"
             ),
-            InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+            InlineKeyboardButton(text="Updates", url=f"https://t.me/Vexana_Updates"),
         ],
     ]
     return buttons
