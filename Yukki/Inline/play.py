@@ -23,10 +23,9 @@ def url_markup(videoid, duration, user_id, query, query_type):
            
         ],
         [
-          
-           InlineKeyboardButton("🔔 Support", url=f"https://t.me/Vexana_Support"),
-           InlineKeyboardButton("🔔 Updates", url=f"https://t.me/Vexana_Updates"),
-        ]
+            InlineKeyboardButton("🔔 Support", url=f"https://t.me/Vexana_Support"),
+            InlineKeyboardButton("🔔 Updates", url=f"https://t.me/Vexana_Updates"),
+        ],
         [
             InlineKeyboardButton(
                 text="🔎 More Option",
